@@ -1,0 +1,17 @@
+{% load static %}
+
+<h1>MovieProject(blank_layout.html) extends inherited..</h1>
+
+<img src="{% static 'images/20230510_222043.png' %} " style="background-color:rgb(190, 241, 194);"></img>
+
+{% include "menu.html" %}
+
+{% block content %}
+<p> place your content </p>
+{% endblock content %}
+
+{% comment %} overiding method works {% endcomment %}
+
+{% block text %}
+<p> place your content </p>
+{% endblock text %}

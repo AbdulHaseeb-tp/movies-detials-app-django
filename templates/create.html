@@ -1,0 +1,16 @@
+
+{% extends "blank_layout.html" %}
+
+
+{% block content %}
+<h1>Create movies</h1>
+
+<form action="" method="post" enctype="multipart/form-data">
+
+    {% csrf_token %}
+
+    {{ frm.as_p }}
+    <button type="submit">Submit</button>
+</form>
+
+{% endblock content %}
